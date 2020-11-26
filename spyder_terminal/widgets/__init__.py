@@ -6,3 +6,5 @@
 # (see LICENSE.txt for details)
 # -----------------------------------------------------------------------------
 """Spyder Terminal Widgets."""
+
+from .main_widget import SpyderTerminalWidget

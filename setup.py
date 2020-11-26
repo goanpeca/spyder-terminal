@@ -88,6 +88,11 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs']),
     install_requires=REQUIREMENTS,
     include_package_data=True,
+    entry_points={
+        "spyder.plugins": [
+            "spyder_terminal = spyder_terminal.plugin:SpyderTerminal"
+        ],
+    },
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
